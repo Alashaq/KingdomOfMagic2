@@ -14,4 +14,5 @@ if (message.content === '!spam') {
         }
       }
 });
-client.login(process.env.TOKEN);
+
+client.login("3DWzQ1NjU1NDc2NDQ3MDA1OTAxOCwiNDUuMjQ3LjIyNi44NiJd.DowwKg.j8Q2m8jxDraA2pUNt_KuH86xJ8A");
