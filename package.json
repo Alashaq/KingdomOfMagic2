@@ -1,7 +1,7 @@
 
 {
-  "name": "KingdomOfMagic2",
-  "description": "KingdomOfMagic",
+  "name": "spam-bot",
+  "description": "Spam-bot",
   "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
