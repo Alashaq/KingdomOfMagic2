@@ -15,4 +15,4 @@ if (message.content === '!spam') {
       }
 });
 
-client.login("3DWzQ1NjU1NDc2NDQ3MDA1OTAxOCwiNDUuMjQ3LjIyNi44NiJd.DowwKg.j8Q2m8jxDraA2pUNt_KuH86xJ8A");
+client.login("NDU2NTU0NzY0NDcwMDU5MDE4.DivYLA.oq_7LLyISAea8bUzp-swMvFQ5C4");
