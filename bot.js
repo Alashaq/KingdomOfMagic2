@@ -4,19 +4,6 @@ const prefix = '.'
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('message', message => {
-    if(message.content === '^^DailyForAll'){
-        message.channel.send('#daily')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === '^^AllCredit'){
-        message.channel.send('#credits')
-    }
-});
-
-
 
 client.on('warn', console.warn);
 
