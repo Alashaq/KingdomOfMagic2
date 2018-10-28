@@ -1,8 +1,42 @@
 var ServerID = "494284550789136384"; //اي دي السيرفر
-var ChannelID = "496043957764096018";// اي دي الروم
+var ChannelID = "494942074542620683";// اي دي الروم
 const prefix = '.'
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
+client.on('message', message => {
+    if(message.content === '^^DailyForAll'){
+        message.channel.send('#daily')
+    }
+});
+
+client.on('message', message => {
+    if(message.content === '^^AllCredit'){
+        message.channel.send('#credits')
+    }
+});
+
+
+client.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+
+
+if (command == "say") {
+let rank = message.guild.member(message.author).roles.find('name', '.');
+if (!rank) return message.reply('انت لا تمتلك الرتبه المخصصه لهذا الامر')
+  message.channel.send(args.join("  "))
+    message.delete();
+  }
+});
+
+
 
 client.on('warn', console.warn);
 
